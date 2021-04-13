@@ -1,0 +1,94 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fad961 0%, #f76b1c 100%);
+  height: 100%;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+}
+
+main > *{
+  margin-top: 0.5rem;
+}
+
+aside {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  font-size: 9px;
+  width: 11px;
+  height: 11px;
+  margin: 0;
+}
+
+.cell:not(:last-child) {
+  border-right: 1px solid black;
+}
+.row:not(:first-child) .cell {
+  border-top: 1px solid black;
+}
+
+.dead {
+  background: rgba(65, 65, 65, 0.5);
+}
+
+.alive {
+  background: white;
+}
+
+section {
+  display: flex;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+a:hover {
+  border: 1px dashed white;
+}
+
+button {
+  background-color: transparent;
+  border-width: 1px solid;
+  border-color: white;
+  border-style: solid;
+  padding: 0.25rem 0.5rem;
+  color: white;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+button:focus,
+button:hover,
+button:active{
+  border-style: dashed;
+}

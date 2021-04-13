@@ -1,0 +1,9 @@
+{
+  "name" : "rescript-game-of-life",
+  "reason" : {"react-jsx" : 3},
+  "bs-dependencies": ["reason-react"],
+  "sources": {
+    "dir" : "src",
+    "subdirs" : true
+  }
+}
